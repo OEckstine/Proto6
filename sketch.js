@@ -19,7 +19,7 @@ function sampleText() {
   pg.textFont(font);
   pg.textSize(120);
   pg.textAlign(CENTER, CENTER);
-  pg.text('SEE ME', width / 2, height / 2);
+  pg.text('OLIVIA ECKSTINE', width / 2, height / 2);
   pg.loadPixels();
 
   let spacing = 6; 
@@ -27,7 +27,7 @@ function sampleText() {
     for (let y = 0; y < height; y += spacing) {
       let index = (x + y * width) * 4;
       let r = pg.pixels[index];
-      if (r > 128) { // if pixel is bright (part of the text)
+      if (r > 128) { 
         particles.push(new Particle(x, y));
       }
     }
